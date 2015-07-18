@@ -1,0 +1,25 @@
+.flowplayer .fp-engine.fp-audio-engine {
+  background-color: #333;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flowplayer .fp-engine.fp-audio-engine .fp-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.flowplayer .fp-engine.fp-audio-engine .fp-info .fp-track,
+.flowplayer .fp-engine.fp-audio-engine .fp-info .fp-album,
+.flowplayer .fp-engine.fp-audio-engine .fp-info .fp-artist {
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+}
+.flowplayer .fp-engine.fp-audio-engine .fp-info .fp-track {
+  font-size: 18px;
+  font-weight: bold;
+}

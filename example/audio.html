@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flowplayer Audio support</title>
+    <link rel="stylesheet" href="//releases.flowplayer.org/6.0.2/skin/functional.css">
+    <link rel="stylesheet" href="//demos.flowplayer.org/media/css/demo.css">
+    <link rel="stylesheet" href="//demos.flowplayer.org/media/css/pygments.css">
+    <link rel="stylesheet" href="../dist/flowplayer.engine.audio.css">
+    <script src="//releases.flowplayer.org/6.0.2/flowplayer.min.js"></script>
+    <script src="../dist/flowplayer.engine.audio.js"></script>
+    <style>
+    body {
+      text-align: center;
+    }
+    #player {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="player" class="aside-time"></div>
+    <p>
+      Music: <a href="http://wwww.bensound.com">www.bensound.com</a>
+    </p>
+
+    <script>
+    flowplayer('#player', {
+      enginePreference: ['audio'],
+      ratio: 1,
+      clip: {
+        sources: [{
+          type: 'audio/mp3',
+          src: 'bensound-rumble.mp3'
+        }]
+      }
+    });
+    </script>
+
+  </body>
+</html>

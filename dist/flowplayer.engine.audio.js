@@ -90,7 +90,8 @@
 	  };
 
 	  self.seek = function(to) {
-	    t.currentTime = to;
+	    to = parseFloat(to);
+	    if (!isNaN(to)) t.currentTime = to;
 	  };
 
 	  self.load = function(video) {
@@ -115,12 +116,10 @@
 	    });
 
 	    bean.on(t, 'timeupdate.ae', function() {
-	      console.log('tt', t.currentTime);
 	      api.trigger('progress', [api, t.currentTime]);
 	    });
 
 	    bean.on(t, 'seeked.ae', function() {
-	      console.log('t', t.currentTime);
 	      api.trigger('seek', [api, t.currentTime]);
 	    });
 

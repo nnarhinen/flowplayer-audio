@@ -27,12 +27,12 @@
 
     <script>
     flowplayer('#player', {
-      enginePreference: ['audio'],
       ratio: 1,
       clip: {
         sources: [{
           type: 'audio/mp3',
-          src: 'bensound-rumble.mp3'
+          src: 'bensound-rumble.mp3',
+          engine: 'audio'
         }]
       }
     });
